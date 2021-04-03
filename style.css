@@ -2,6 +2,7 @@
 body{
 	background-color: #161616; /* Met le fond en noir */
 	margin: 0; /* retire les marges sur les extremites du  body*/
+
 }
 
 header {
@@ -15,6 +16,7 @@ header {
 main{
 	margin: 0 auto;
 	max-width: 990px;
+	padding-top: 50px;
 	
 }
 
@@ -124,7 +126,6 @@ mark{
 
 .presentationtitre{ /*Regroupe le titre de chaques pages*/
 	text-align: center; /* aligne au centre la div contenant le titre des pages  */
-	margin-top: 50px; /* pousse la div qui contient le titre de chaque de page de 50px vers le bas*/
 	color: green; /*met le titre de chaque pages en vert */
 	text-decoration: underline; /* souligne le titre   */
 	font-size:  1.2em; /* change la taille de la police du  titre */
@@ -224,4 +225,8 @@ height:400px;
 
 .HR{
 	width: 400px;
+}
+
+h2 {
+	margin-top: 0;
 }
