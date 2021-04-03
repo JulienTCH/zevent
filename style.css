@@ -15,18 +15,14 @@ header {
 main{
 	margin: 0 auto;
 	max-width: 990px;
-	padding-left: 10px;
-	padding-right: 10px;
+	
 }
 
 footer {
 	background-color: #1c1c1c;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	text-align: center;
-	padding: 10px;
 }
 
 @font-face{ 
@@ -182,8 +178,6 @@ mark{
 
 .video
 {
-	width: 600px;
-	height: 400px;
 	margin-bottom: 10px; 
 }
 
@@ -193,6 +187,18 @@ mark{
         align-items: center;
         flex-direction: column;
 	}
+}
+
+@media (max-width: 600px) { /*Prend screen utilisateur > Ajustement*/
+    .galerie2, .iframe, .video {
+        width: 300px !important ;
+        height: auto;
+    }
+
+    .HR, .fingalerie1 {
+
+    	width: 300px !important ;
+    }
 }
 
 
