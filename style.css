@@ -1,0 +1,221 @@
+/*Head*/
+body{
+	background-color: #161616; /* Met le fond en noir */
+	margin: 0; /* retire les marges sur les extremites du  body*/
+}
+
+header {
+	background-color: #1c1c1c; /* met le backgroun de la division boutons+logo en gris foncé*/ 
+	padding-bottom: 50px; /* étend la division boutons + logo de 50px vers le bas*/
+	padding-top: 50px;
+	padding-left: 10px;
+	padding-right: 10px;	
+}
+
+main{
+	margin: 0 auto;
+	max-width: 990px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+footer {
+	background-color: #1c1c1c;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	padding: 10px;
+}
+
+@font-face{ 
+	font-family: bebas;
+	src: local("bebas"), local("Bebas");
+	src: url(https://fonts.gstatic.com/s/bebasneue/v2/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2) format('woff2');
+}
+
+@font-face{
+font-style: normal;
+font-family: fja;
+src: local("FJA"), local("fja");
+src: url(https://fonts.gstatic.com/s/fjallaone/v8/Yq6R-LCAWCX3-6Ky7FAFrOF6kg.woff2) format('woff2');
+}
+
+@font-face{
+	font-family: LTEMPHASIS;
+	src: local("LTEMPHASIS"), local("LTEmphasis");
+	src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLFj_Z1xlFQ.woff2) format('woff2')
+}
+
+@font-face {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ptsans/v12/jizaRExUiTo99u79D0KExQ.woff2) format('woff2');
+}
+a:hover{ /* permet de changer de couleur lorsque on passe la souris sur un <a> */
+	color: green;
+} 
+
+a{
+	color: white;
+}
+
+.nodeco{ /*Enlève la déco texte sur les <a> du header*/
+	text-decoration: none;
+}
+
+ul{ 
+	display: table; /*Structure de tableau*/
+	margin: 0 auto;
+	padding: 0; /*Retire la marge in de base sur les listes*/
+	list-style: square inside; /*Place les puces dans le bloc text de la liste*/
+	color: white;
+}
+
+
+/*Fin Head*/
+
+/*HEADER*/
+
+.titre_image{ /*Logo ZEVENT dans le header*/
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+
+.boutons { /*Regroupement des 3 buttons*/
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 30px;
+	font-size:  1em;
+	font-family: bebas; 
+}
+
+.boutons div{ /* Regroupe des divisions dans la division boutons*/
+	width: 190px;
+}
+
+
+
+
+.h1bouton{ /*Regroupe le texte dans les buttons*/
+	border-width:7px; /* définie la taille de la bordure */
+	border-style: inset; /* change le style de la bordure */
+	border-color:green; /* change la couleur de la bordyre */
+	padding-bottom:0px;
+	padding-left: 5px;
+	padding-right: 5px; /* éloigne la bordure du texte de 5px vers la droite*/
+	padding-top: 3px;
+	border-radius: 5px;
+}
+
+strong{color: green;}
+
+mark{
+	background-color: green;
+}
+
+
+/*Fin du HEADER*/
+
+/*Debut du main*/
+
+.presentationtitre{ /*Regroupe le titre de chaques pages*/
+	text-align: center; /* aligne au centre la div contenant le titre des pages  */
+	margin-top: 50px; /* pousse la div qui contient le titre de chaque de page de 50px vers le bas*/
+	color: green; /*met le titre de chaque pages en vert */
+	text-decoration: underline; /* souligne le titre   */
+	font-size:  1.2em; /* change la taille de la police du  titre */
+	font-family: bebas; /* chaange la police d'écriture du titre */
+	margin-bottom: 50px; /* ajoute un espace de 60px ebn bas de la div du titre */
+}
+
+.titre{ /*Regroupe les titres des paragraphes*/
+	text-align: center; /* aligne le texte de*/
+	color: white;
+	font-size: 1.1em;
+	text-decoration: underline;
+	font-family: bebas;
+	margin-bottom: 50px;
+}
+
+
+.paragraphe{
+	text-align: center;
+	color: white;
+	font-size: 1.1em;
+	font-family: LTEMPHASIS;
+	margin-bottom: 50px;
+}
+
+.paragraphefin{
+	margin: 0px;
+	text-align: center;
+	color: white;
+	font-size: 1.1em;
+	font-family: LTEMPHASIS;
+
+}
+
+.galerie{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.galerie1{ /*Image type 300x300*/
+	width: 300px;
+	height: 300px;	                                                   
+}
+
+.galerie2 { /*Image 600x400*/
+	width: 600px;
+	height: 400px;	
+}
+
+.video
+{
+	width: 600px;
+	height: 400px;
+	margin-bottom: 10px; 
+}
+
+@media (max-width: 768px) { /*Prend screen utilisateur > Ajustement*/
+    .boutons {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+	}
+}
+
+
+
+.fin{
+	margin-bottom: 0px;
+}
+
+.fingalerie1{
+	margin-bottom: 0px;
+}
+
+.footertext{
+	color: white;
+	font-family: PT SANS;
+}
+
+.iframe {
+width:600px;
+height:400px;
+
+}
+
+.HR{
+	width: 400px;
+}
