@@ -1,4 +1,5 @@
 /*Head*/
+
 body{
 	margin: 0; /* retire les marges sur les extremites du  body*/
 }
@@ -74,6 +75,21 @@ mark{
 a{
 	color: green;
 }
+
+::-webkit-scrollbar{
+	width: 10px;
+}
+
+::-webkit-scrollbar-track{
+	border: 5px solid #1c1c1c;
+}
+
+::-webkit-scrollbar-thumb{
+	background: #444545;
+	border-radius: 30px;
+}
+
+
 /*Fin Head*/
 
 /*HEADER*/
@@ -142,6 +158,10 @@ a{
 	font-size:  1.2em; /* change la taille de la police du  titre */
 	font-family: bebas; /* chaange la police d'écriture du titre */
 	margin-bottom: 50px; /* ajoute un espace de 60px ebn bas de la div du titre */
+}
+
+h2 {
+	margin-top: 0;
 }
 
 .titre{ /*Regroupe les titres des paragraphes*/
@@ -225,17 +245,8 @@ a{
     }
 }
 
-
-
 .footertext{
 	color: white;
 	font-family: PT SANS;
-}
-
-
-
-
-h2 {
-	margin-top: 0;
 }
 
