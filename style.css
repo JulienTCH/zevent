@@ -1,3 +1,8 @@
+/*Ce site est fait pour s'afficher sur des écran de + de 320pixel (iphone4 ou+)*/
+/*Les commandes qui n'ont pas été vu en cours ont étés commentés*/
+/*Ce site est hebergé : www.zevent.tk*/
+
+
 /*Head*/
 
 body{
@@ -97,10 +102,9 @@ a:hover{
 
 .boutons { /*Regroupement des 3 buttons*/
 	width: 100%;
-	text-align: center; /*Center le texte dans les div buttons uniquement*/
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+	text-align: center; /*Center le texte dans les svg*/
+	display: flex; /*Display de disposition des élements, + adapté que margin car adaptatif pour l'écran*/
+	justify-content: space-around;  /*Centre les élements et les séparent proportionelement par rapport à la taille de l'écran*/
 	margin-top: 30px;
 }
 
@@ -110,7 +114,7 @@ a:hover{
 
 .shape {
   stroke-dasharray: 140 540; /*Tronque la bordure pour que le début de l'animation se fasse en ligne en dessous des titres*/
-  stroke-dashoffset: -474; /*Permet le dash de la ligne autour de la div*/
+  stroke-dashoffset: -474; /*Permet le mouv (dash)  de la ligne autour de la div*/
   stroke-width: 8px; /* Definit l'épaisseur de la ligne*/
   fill: transparent; /*Met le fond du ficher (du svg dans ce cas) en transparent*/
   stroke: green; /* Couleur de la ligne en vert*/
@@ -123,18 +127,18 @@ a:hover{
   letter-spacing: 8px;
   color: #fff;
   top: -48px; /*Place le texte au centre du svg en enlevant 48px au Y*/
-  position: relative;
+  position: relative; /*Pouvoir appliqué un décalage en X ou Y sur la div text*/
 }
 
-.boutons123:hover .shape {
-  stroke-width: 2px;
-  stroke-dashoffset: 0;
-  stroke-dasharray: 760;
+.boutons123:hover .shape { /* :hover="quand curseur sur */
+  stroke-width: 2px; /*Largeur ligne*/
+  stroke-dashoffset: 0;  /*Place le point de départ de l'animation*/
+  stroke-dasharray: 760; /*Définit la longeur de trait de l'animation*/
 
 }
 
 .boutons123:hover{
-	background-color: rgba(51, 170, 51, .03);
+	background-color: rgba(51, 170, 51, .03); /*Définit les couleur avec les couleuirs primaires, rouge vert, bleu + la transparence*/
 }
 
 
@@ -159,7 +163,7 @@ a:hover{
 	text-decoration: underline; /* souligne le titre   */
 	font-size:  1.2em; /* change la taille de la police du  titre */
 	font-family: bebas; /* chaange la police d'écriture du titre */
-	letter-spacing: 2px;
+	letter-spacing: 2px; /*Espace entre les lettres*/
 	margin-bottom: 50px; /* ajoute un espace de 60px ebn bas de la div du titre */
 }
 
@@ -195,9 +199,9 @@ h2 {
 
 .galerie{
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	flex-direction: column; /*Dirige les élements enfants en colonne*/
+	justify-content: center; /*Centre la flex box*/
+	align-items: center; /*Centre les images dans la flex box*/
 }
 
 .galerie1{ /*Image type 300x300*/
