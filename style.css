@@ -29,27 +29,20 @@ footer {
 	padding-right: 10px;
 }
 
-@font-face{ 
-	font-family: bebas;
-	src: local("bebas"), local("Bebas");
-	src: url(https://fonts.gstatic.com/s/bebasneue/v2/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2) format('woff2');
+@font-face{  /* Importation d'une font */
+	font-family: bebas; /* défini le nom de la font */
+	src: local("bebas"), local("Bebas"); /* regarde si la police n'est pas déja installé sur l'appareil*/
+	src: url(https://fonts.gstatic.com/s/bebasneue/v2/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2) format('woff2');/* source direct google font */
 }
 
 @font-face{
-font-style: normal;
-font-family: fja;
-src: local("FJA"), local("fja");
-src: url(https://fonts.gstatic.com/s/fjallaone/v8/Yq6R-LCAWCX3-6Ky7FAFrOF6kg.woff2) format('woff2');
-}
-
-@font-face{
-	font-family: LTEMPHASIS;
+	font-family: LTEMPHASIS; /* Importation d'une font */
 	src: local("LTEMPHASIS"), local("LTEmphasis");
 	src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLFj_Z1xlFQ.woff2) format('woff2')
 }
 
 @font-face {
-  font-family: PT Sans;
+  font-family: PT Sans; /* Importation d'une font */
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/ptsans/v12/jizaRExUiTo99u79D0KExQ.woff2) format('woff2');
@@ -57,11 +50,9 @@ src: url(https://fonts.gstatic.com/s/fjallaone/v8/Yq6R-LCAWCX3-6Ky7FAFrOF6kg.wof
 
 
 ul{
-	display: table; /*Structure de tableau*/
-	margin: 0 auto;
+	margin: 0 auto; /*Applique des marges auto sur les deux cotés horizontale de l'écran pour centrer*/
 	padding: 0; /*Retire la marge in de base sur les listes*/
 	list-style: square inside; /*Place les puces dans le bloc text de la liste*/
-	color: white;
 }
 
 strong{
@@ -76,15 +67,19 @@ a{
 	color: green;
 }
 
-::-webkit-scrollbar{
+a:hover{
+	color: darkgreen;
+}
+
+::-webkit-scrollbar{ /*Selection de la largeur de la scroll bar*/
 	width: 10px;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track{ /*Sélection du "fond" de la scroll bar*/
 	border: 5px solid #1c1c1c;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb{ /*Séleciton de la barre de scroll*/
 	background: #444545;
 	border-radius: 30px;
 }
@@ -135,7 +130,14 @@ a{
   stroke-width: 2px;
   stroke-dashoffset: 0;
   stroke-dasharray: 760;
+
 }
+
+.boutons123:hover{
+	background-color: rgba(51, 170, 51, .03);
+}
+
+
 
 .nodeco{ /*Enlève la déco texte sur les <a> du header*/
 	text-decoration: none;
@@ -157,6 +159,7 @@ a{
 	text-decoration: underline; /* souligne le titre   */
 	font-size:  1.2em; /* change la taille de la police du  titre */
 	font-family: bebas; /* chaange la police d'écriture du titre */
+	letter-spacing: 2px;
 	margin-bottom: 50px; /* ajoute un espace de 60px ebn bas de la div du titre */
 }
 
@@ -164,15 +167,23 @@ h2 {
 	margin-top: 0;
 }
 
-.titre{ /*Regroupe les titres des paragraphes*/
+.titre{ /*Regroupe les titres des pages 0 1 3 */
 	text-align: center; /* aligne le texte de*/
 	color: white;
-	font-size: 1.1em;
 	text-decoration: underline;
 	font-family: bebas;
+	letter-spacing: 1px;
 	margin-bottom: 50px;
 }
 
+.titre2{ /*Regroupe les titres de l'historique*/
+	text-align: center; /* aligne le texte de*/
+	color: green;
+	text-decoration: underline;
+	font-family: bebas;
+	letter-spacing: 1px;
+	margin-bottom: 50px;
+}
 
 .paragraphe{
 	text-align: center;
@@ -250,3 +261,6 @@ h2 {
 	font-family: PT SANS;
 }
 
+.list {
+	font-family: : LTEMPHASIS;
+}
